@@ -5,9 +5,6 @@ import SongSlice from "./SongSlice";
 import SongSaga from "../saga/SongSaga";
 import SingleSongSlice from "./SingleSongSlice";
 import SingleSongSaga from "../saga/SingleSongSaga";
-import movieSlice from "../movie/movieSlice";
-// import { MovieSaga } from "../movie/movieSaga";
-import rootSaga from "../movie/rootSaga";
 import NewSongSaga from "../saga/NewSongSaga";
 import NewSongSlice from "./NewSongSlice";
 import DeleteSongSaga from "../saga/deleteSongSaga";
@@ -19,7 +16,6 @@ const store = configureStore({
   reducer: {
     songs: SongSlice,
     song: SingleSongSlice,
-    movies: movieSlice,
     newSong: NewSongSlice,
     deletesong: DeleteSongSlice,
     updateSong: UpdateSongSlice,
@@ -28,7 +24,6 @@ const store = configureStore({
 });
 
 saga.run(SongSaga);
-saga.run(rootSaga);
 saga.run(NewSongSaga);
 saga.run(SingleSongSaga);
 saga.run(DeleteSongSaga);

@@ -1,6 +1,7 @@
 import styled from "styled-components";
-export const StyledNavBar = styled.div`
+export const StyledNavBar = styled.a`
   background-color: #1d1d53;
+  text-decoration: none;
   height: 3rem;
   display: flex;
   align-items: center;
