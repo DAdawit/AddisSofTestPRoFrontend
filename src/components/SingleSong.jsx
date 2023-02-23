@@ -7,7 +7,6 @@ import { Navigate } from "react-router-dom";
 import { Link, NavLink } from "react-router-dom";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-import nigusu from "/nigu (10).mp3";
 import musicMonky from "/muscMonky2.png";
 import {
   Music_DetailPage_Container,
@@ -54,7 +53,7 @@ export const SingleSong = () => {
           </Flex_Center>
         </Music_Detail_Cover_Backgroud>
         <Music_Detail_player_Container>
-          <AudioPlayer src={`../../../backend/assets/${song?.song?.songUrl}`} />
+          <AudioPlayer src={`http://localhost:4000/${song?.song?.songUrl}`} />
           {/* <AudioPlayer src="../../../backend/assets/1677089355330nigu (1).mp3" /> */}
           {/* ../../../backend/assets/1677089355330nigu (1).mp3 */}
         </Music_Detail_player_Container>

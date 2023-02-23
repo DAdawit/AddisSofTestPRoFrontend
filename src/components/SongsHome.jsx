@@ -5,7 +5,6 @@ import { resetPutSong } from "../store/UpdateSongSlice";
 import { Link } from "react-router-dom";
 import { resetDeleteSongState } from "../store/DeleteSongSlice";
 import { Container } from "../StyledComponents/StyledContainer";
-import nigusu from "/nigu (10).mp3";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import {
@@ -37,7 +36,7 @@ export const SongHome = () => {
       <Card_Title>{song.title}</Card_Title>
       <Card_Subtitle>{song.artist}</Card_Subtitle>
       <Music_player_Container>
-        <AudioPlayer src={song.songUrl} />
+        <AudioPlayer src={`http://localhost:4000/${song.songUrl}`} />
       </Music_player_Container>
     </Card>
   ));

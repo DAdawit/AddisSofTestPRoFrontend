@@ -25,3 +25,12 @@
   padding-top: 7px;
   text-align: center;
 }
+.Nav-link {
+  background-color: #1d1d53;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+}
